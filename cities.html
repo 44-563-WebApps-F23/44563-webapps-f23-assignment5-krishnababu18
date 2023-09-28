@@ -12,8 +12,28 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light" >
+    <a class="navbar-brand" href="cities.html">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="basic.html">Basic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="advanced.html">Advanced</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
     <div class="container">
     <div class="row" style="background-color: rgb(226, 240, 29); ">
@@ -35,6 +55,7 @@
     <div class="col-md">Kolkata</div>
     <div class="col-md">Ranchi</div>
   </div>
+
 </div>
 <br>
 <div class="container">
@@ -45,6 +66,158 @@
   so, here second row breaks first because it's size is Md which is bigger than the first row of Sm .
 </p>
 </div>
+
+<div class="container">
+  <img src="andaman.jpg" class="img-fluid" alt="Andaman" width="150" height="150">
+  <img src="Goa.jpg" class="img-fluid" alt="Goa" width="200" height="200">
+  <img src="Lucknow.jpg" class="img-fluid" alt="Lucknow" width="200" height="200">
+</div>
+
+<div class="container">
+  <img src="andaman.jpg" class="img-thumbnail" alt="Andaman" width="150" height="150">
+  <img src="Goa.jpg" class="img-thumbnail"  alt="Goa" width="200" height="200">
+  <img src="Lucknow.jpg" class="img-thumbnail"  alt="Lucknow" width="200" height="200">
+</div>
+
+<table class="table table-striped table-hover table-bordered table-sm ">
+  <caption>Table for Letter,Cities,River and Tree</caption>
+  <thead class="table-dark">
+    <tr class="text-center" >
+      <th scope="col">Letter</th>
+      <th scope="col" >City</th>
+      <th scope="col">River</th>
+      <th scope="col">Tree</th>
+    </tr>
+  </thead>
+  <tbody class="table-bordered">
+    <tr class="table-primary text-center">
+      <td >G</td>
+      <td >Goa</td>
+      <td >Ganga</td>
+      <td >Golden apple tree</td>
+    </tr>
+
+    <tr class="text-center">
+      <td >A</td>
+      <td >Andaman</td>
+      <td >American</td>
+      <td >Apple</td>
+    </tr>
+
+    <tr class="text-center table-secondary">
+      <td >L</td>
+      <td >Lucknow</td>
+      <td >La moine river</td>
+      <td >Lancewood</td>
+    </tr>
+
+    <tr class="text-center">
+      <td >I</td>
+      <td >Impal</td>
+      <td >Indus</td>
+      <td >Ivory palm</td>
+    </tr>
+
+    <tr class="text-center table-danger">
+      <td >K</td>
+      <td >Kolkata</td>
+      <td >Kaveri</td>
+      <td >kiwi</td>
+    </tr>
+
+    <tr class="text-center">
+      <td >R</td>
+      <td >Ranchi</td>
+      <td >Rubicon</td>
+      <td >Redwood</td>
+    </tr>
+
+</tbody>
+
+</table>
+
+
+<div class="btn-toolbar" aria-label="NavigationBar">
+  <div class="btn-group me-2" aria-label="Group1">
+    <button type="button" class="btn btn-success">G</button>
+    <button type="button" class="btn btn-success">A</button>
+    <button type="button" class="btn btn-success">L</button>
+  
+  </div>
+  
+  <div class="btn-group me-2 btn-warning" aria-label="Group2">
+    <button type="button" class="btn btn-warning">I</button>
+    <button type="button" class="btn btn-warning">K</button>
+  </div>
+  
+  <div class="btn-group me-2 btn-danger" aria-label="Group3">
+    <button type="button" class="btn btn-danger">R</button>
+  </div>
+</div>
+
+<p></p>
+
+ <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="basic.html">Basic</a>
+        <a class="dropdown-item" href="advanced.html">Advanced</a>
+      </div>
+ </div>
+<br>
+<br>
+ <form>
+    <div class="form-group">
+      <label for="exampleInputEmail" class="form-label">Email id</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group">
+      <label for="City" class="form-label">City</label>
+      <input type="text" class="form-control" id="cityInput" placeholder ="Enter your city">
+    </div>
+    <div class="form-check">
+      <label for="Newsletter" class="form-check-label">
+        Sign up for newsletter?
+      </label>
+      <input type="checkbox" class="form-check-input" id="newsLetter">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+<br>
+<br>
+ <div class="card" style="width: 40rem">
+  <img src="goa.jpg" alt="Tokyo" width="200" height="200">
+  <div class="card-body">
+    <h4>Goa</h4>
+    <p class="card-text">Goa is definitely worth a week stay!</p>
+    <a href="https://en.wikipedia.org/wiki/Goa" class="btn btn-primary">More about Goa</a>
+  </div> 
+</div>
+<br>
+ <div class="card" style="width: 40rem">
+    <img src="andaman.jpg" alt="amsterdam" width="200" height="200">
+    <div class="card-body">
+      <h4>Andaman</h4>
+      <p class="card-text">Andaman is definitely worth a visit!</p>
+      <a href="https://en.wikipedia.org/wiki/Andaman" class="btn btn-primary">More about Andaman</a>
+    </div> 
+</div>
+<br>
+ <div class="card" style="width: 40rem">
+  <img src="lucknow.jpg" alt="newYork" width="200" height="200">
+  <div class="card-body">
+    <h4>Lucknow</h4>
+    <p class="card-text">Lucknow is definitely worth vacaying at!</p>
+    <a href="https://en.wikipedia.org/wiki/Lucknow" class="btn btn-primary">More about Lucknow</a>
+  </div> 
+</div>
+
+<br>
+<br>
 
 </body>
 </html>
